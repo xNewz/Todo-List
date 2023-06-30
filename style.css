@@ -1,109 +1,109 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  padding: 20px;
+  font-family: Arial, sans-serif; /* use a sans-serif font family */
+  background-color: #f5f5f5; /* light grey */
+  padding: 20px; /* add some padding around the content */
 }
 
 h1 {
-  text-align: center;
-  color: #333333;
+  text-align: center; /* center the heading */
+  color: #333333; /* dark grey */
 }
 
 #todo-form {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 10px; /* add some space between the form and the list */
+  display: flex; /* use flexbox */
+  justify-content: center; /* center the form */
 }
 
 #todo-input {
-  padding: 5px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  width: 200px;
-  margin-right: 5px;
+  padding: 5px; /* add some padding around the input */
+  border: 1px solid #cccccc; /* add a grey border */
+  border-radius: 3px; /* round the corners */
+  width: 200px; /* set a width */
+  margin-right: 5px; /* add some space between the input and the button */
 }
 
 #todo-form button {
-  padding: 5px 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+  padding: 5px 10px; /* add some padding around the button */
+  background-color: #4caf50; /* green */
+  color: white; /* white text */
+  border: none; /* remove the border */
+  border-radius: 3px; /* round the corners */
+  cursor: pointer; /* add a pointer cursor on mouse-over */
 }
 
 #todo-form button:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* slightly darker green on mouse-over */
 }
 
 #todo-list {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* remove the bullets */
+  padding: 0; /* remove the default padding */
 }
 
 .todo-item {
-  margin-bottom: 5px;
-  background-color: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px; /* add some space between the items */
+  background-color: white; /* white background */
+  padding: 10px; /* add some padding around the content */
+  display: flex; /* use flexbox */
+  align-items: center; /* vertically center the items */
+  justify-content: space-between; /* evenly distribute the items */
+  border-radius: 3px; /* round the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
 }
 
 .todo-item label {
-  flex-grow: 1;
-  margin-right: 10px;
+  flex-grow: 1; /* make the label take up all the space it can */
+  margin-right: 10px; /* add some space between the label and the buttons */
 }
 
 .todo-item input[type="checkbox"] {
-  margin-right: 10px;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #cccccc;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
+  margin-right: 10px; /* add some space between the checkbox and the label */
+  appearance: none; /* remove the default appearance */
+  width: 20px; /* set a width */
+  height: 20px; /* set a height */
+  border: 2px solid #cccccc; /* add a grey border */
+  border-radius: 3px; /* round the corners */
+  outline: none; /* remove the focus ring */
+  cursor: pointer; /* add a pointer cursor on mouse-over */
 }
 
 .todo-item input[type="checkbox"]:checked {
-  background-color: #4caf50;
-  border-color: #4caf50;
+  background-color: #4caf50; /* green */
+  border-color: #4caf50; /* green */
 }
 
 .todo-item input[type="checkbox"]:checked::after {
-  content: "\2713";
-  display: block;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  line-height: 16px;
+  content: "\2713"; /* add a checkmark */
+  display: block; /* display the checkmark */
+  color: white; /* white checkmark */
+  text-align: center; /* center the checkmark */
+  font-size: 14px; /* make the checkmark a bit smaller */
+  line-height: 16px; /* vertically center the checkmark */
 }
 
 .todo-item input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  color: #999999;
+  text-decoration: line-through; /* add a line-through on the label */
+  color: #999999; /* grey text */
 }
 
 .todo-item button {
-  padding: 5px 10px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+  padding: 5px 10px; /* add some padding around the button */
+  background-color: #f44336; /* red */
+  color: white; /* white text */
+  border: none; /* remove the border */
+  border-radius: 3px; /* round the corners */
+  cursor: pointer; /* add a pointer cursor on mouse-over */
 }
 
 .todo-item button.edit-button {
-  background-color: #2196f3;
+  background-color: #2196f3; /* blue */
 }
 
 .todo-item button:hover {
-  opacity: 0.8;
+  opacity: 0.8; /* slightly lower opacity on mouse-over */
 }
 
 .todo-item button:last-child {
-  margin-left: 10px;
+  margin-left: 10px; /* add some space between the buttons */
 }
